@@ -38,7 +38,7 @@ export default class Ipfs implements ICas {
     // Binary content of second part.
     // --ABoundaryString--
     const beginBoundary = Buffer.from(`--${multipartBoundaryString}\n`);
-    const firstPartContentType = Buffer.from(`Content-Type: application/octet-stream\n\n`);
+    const firstPartContentType = Buffer.from(`Content-Disposition: form-data\nContent-Type: application/octet-stream\n\n`);
     const endBoundary = Buffer.from(`\n--${multipartBoundaryString}--`);
     const requestBody = Buffer.concat([beginBoundary, firstPartContentType, content, endBoundary]);
 
