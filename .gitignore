@@ -1,4 +1,4 @@
-dist/*
+dist/tests
 node_modules/
 www/api/index.html
 www/spec/index.html
@@ -13,5 +13,3 @@ coverage/
 .idea/
 
 style-conversion
-
-!dist/lib/
