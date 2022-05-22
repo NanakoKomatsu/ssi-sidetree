@@ -74,7 +74,8 @@
     "lint:fix": "eslint --ext ts lib/ tests/ --fix",
     "spec": "node -e \"require('spec-up')({ nowatch: true })\"",
     "spec:edit": "node -e \"require('spec-up')()\"",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "preinstall": "npm run build"
   },
   "husky": {
     "hooks": {
