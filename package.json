@@ -75,7 +75,7 @@
     "spec": "node -e \"require('spec-up')({ nowatch: true })\"",
     "spec:edit": "node -e \"require('spec-up')()\"",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "preinstall": "npm run build"
+    "postinstall": "npm i && npm run build"
   },
   "husky": {
     "hooks": {
