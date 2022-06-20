@@ -66,7 +66,6 @@ export default class MongoDbStore {
       monitorCommands: true,
       loggerLevel: 'error'
     });
-　　console.log("Yeah!NANAKOKOMATSUdayo!");
     MongoDbStore.enableCommandResultLogging(client);
     this.db = client.db(this.databaseName);
     await this.createCollectionIfNotExist(this.db);
